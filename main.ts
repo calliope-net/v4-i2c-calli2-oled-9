@@ -2,7 +2,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     funkzeit_ms = input.runningTime()
     if (bit.getBit(receivedNumber, 24)) {
         oled.comment("fährt, alle i2c Anzeigen nicht aktualisieren um Zeit zu sparen")
-        Calli2bot.fahreJoystick(receivedNumber, true, true)
+        Calli2bot.fahreJoystick(receivedNumber, true, true, 20)
     } else {
         oled.comment("fährt nicht")
         OLEDtext.writeText8x16(1, 0, 7, bit.formatNumber(receivedNumber, bit.eLength.HEX_FFFFFFFF))
