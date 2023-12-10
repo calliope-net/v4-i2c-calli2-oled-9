@@ -1,5 +1,5 @@
 {
-    "name": "v4-i2c-calli2-oled #9",
+    "name": "v4-i2c-calli2-oled",
     "description": "",
     "dependencies": {
         "calli2bot": "github:calliope-net/calli2bot#v1.1.4",
